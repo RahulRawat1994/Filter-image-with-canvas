@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filter image using canvas</title>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="filter.js"></script>
+</head>
+<body>
+  <div class="container">
+  <h1>Filters</h1>
+  <ul class="frame_out">
+    <li>
+      <div class="frame"  id="Normal" >
+        <a onClick="ImageFilter('Normal')" >
+          <img src="./img.jpg" alt="">
+        </a>
+        <span>Normal</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="frame" id="Moon">
+        <a onClick="ImageFilter('Moon')">
+          <img src="./moon.png" alt="">
+        </a>
+        <span>Moon</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="frame" id="Hudson">
+        <a onClick="ImageFilter('Hudson')">
+          <img src="./hudson.png"  alt="">
+        </a>
+        <span>Hudson</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="frame" id="Gingham">
+        <a onClick="ImageFilter('Gingham')" >
+          <img src="./gingham.png" alt="">
+        </a>
+        <span>Gingham</span>
+      </div>
+    </li>
+    <li>
+      <div class="frame" id="Retro" >
+        <a onClick="ImageFilter('Retro')">
+          <img src="./retro.png" alt="">
+        </a>
+        <span>Retro</span>
+      </div>
+    </li>
+  </ul>
+  <div class="content">
+    <img crossOrigin="anonymous" src="img.jpg" style="display: none"  id="media_img"/>
+    <img id="selectedMedia" crossOrigin="anonymous" src="./img.jpg" style="width:100%" alt="image for resizing">
+  </div>
+</div>
+</body>
+</html>

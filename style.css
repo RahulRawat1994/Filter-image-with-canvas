@@ -1,0 +1,23 @@
+.container{
+  width: 600px;
+  margin:0 auto;
+}
+ul.frame_out{
+  padding: 0px;
+  margin: 0px;
+}
+ul.frame_out li {
+    float: left;
+    list-style: none;
+}
+ul.frame_out li div.frame {
+    width: 100px;
+    padding:10px;
+    text-align: center;
+}
+ul.frame_out li div.frame a img {
+    width: 100%;
+}
+div.frame.active{
+  border-bottom: 7px solid #aaa;
+}
